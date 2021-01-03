@@ -38,11 +38,14 @@ function setBgGreet() {
         // Evening
         document.body.style.backgroundImage = 'url("img/evening.jpg")';
         greeting.textContent = 'Good Evening';
+        document.body.style.color = 'white';
+        document.body.style.textShadow = 'black 0px 0px 7px';
     } else {
         // Night
         document.body.style.backgroundImage = 'url("img/night.jpg")';
         greeting.textContent = 'Good Night';
         document.body.style.color = 'white';
+        document.body.style.textShadow = 'black 0px 0px 7px';
     }
     setTimeout(setBgGreet, 1000);
 }
@@ -98,7 +101,11 @@ focus.addEventListener('keypress', setFocus);
 focus.addEventListener('blur', setFocus);
 
 // Init
-showTime();
-setBgGreet();
-getName();
-getFocus();
+function init() {
+    showTime();
+    setBgGreet();
+    getName();
+    getFocus();
+}
+
+init();
