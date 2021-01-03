@@ -11,15 +11,15 @@ function showTime() {
     let min = today.getMinutes();
 
     // Update Time in HTML
-    time.innerHTML = `${hour}<span>:</span>${min}`;
+    time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(min)}`;
 
     // Repeats showTime every 1000 milliseconds
     setTimeout(showTime, 1000);
 }
 
 // Add Zeros
-function addZero() {
-
+function addZero(n) {
+    return (parseInt(n, 10) < 10 ? '0' : '') + n;
 }
 
 // Init
