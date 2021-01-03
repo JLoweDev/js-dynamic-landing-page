@@ -42,7 +42,9 @@ function setBgGreet() {
         // Night
         document.body.style.backgroundImage = 'url("img/night.jpg")';
         greeting.textContent = 'Good Night';
+        document.body.style.color = 'white';
     }
+    setTimeout(setBgGreet, 1000);
 }
 
 // Init
