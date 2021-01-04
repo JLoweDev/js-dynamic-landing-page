@@ -8,17 +8,29 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#maincontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 100vh;
-  color: rgba(0, 0, 0, 0.9);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   text-shadow: goldenrod 0px 0px 3px;
+}
+
+#linksbar {
+  position: fixed;
+  width: 20%;
+  margin-left: 0px;
+  margin-top: 0px;
+  height: 100%;
+  border: pink solid 1px;
 }
 
 #time {
