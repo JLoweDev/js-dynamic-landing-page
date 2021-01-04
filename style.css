@@ -68,6 +68,7 @@ body {
 
 .linkitem i {
   color: goldenrod;
+  padding-right: 10px;
 }
 
 .linkitem a {
