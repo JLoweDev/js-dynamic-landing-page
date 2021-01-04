@@ -30,7 +30,49 @@ body {
   margin-left: 0px;
   margin-top: 0px;
   height: 100%;
-  border: pink solid 1px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#linkstop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#linkstop h3 {
+  padding: 15px;
+  color: goldenrod;
+  font-size: 1.25rem;
+}
+
+#linkstop button {
+  border: none;
+  background: none;
+  color: goldenrod;
+  padding: 10px;
+  font-size: 1.25rem;
+}
+
+#linkslist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.linkitem {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.linkitem i {
+  color: goldenrod;
+}
+
+.linkitem a {
+  text-decoration: none;
+  color: lightgray;
 }
 
 #time {
