@@ -4,6 +4,7 @@ const greeting = document.getElementById('greeting');
 const name = document.getElementById('name');
 const focus = document.getElementById('focus');
 const darkmode = document.getElementById('darkmode');
+let dark = false;
 
 // Show Time
 function showTime() {
@@ -94,11 +95,17 @@ function setFocus(e) {
     }
 }
 
+// Toggle Darkmode
+function toggleDarkmode() {
+    console.log('bum');
+}
+
 // Event Listeners
 name.addEventListener('keypress', setName);
 name.addEventListener('blur', setName);
 focus.addEventListener('keypress', setFocus);
 focus.addEventListener('blur', setFocus);
+darkmode.addEventListener('click', toggleDarkmode);
 
 // Init
 function init() {
