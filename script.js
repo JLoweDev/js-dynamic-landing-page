@@ -9,9 +9,10 @@ function showTime() {
     let today = new Date();
     let hour = today.getHours();
     let min = today.getMinutes();
+    let seconds = today.getSeconds();
 
     // Update Time in HTML
-    time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(min)}`;
+    time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(min)}<span>:</span>${addZero(seconds)}`;
 
     // Repeats showTime every 1000 milliseconds
     setTimeout(showTime, 1000);
