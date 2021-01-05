@@ -3,7 +3,7 @@ const time = document.getElementById('time');
 const greeting = document.getElementById('greeting');
 const name = document.getElementById('name');
 const focus = document.getElementById('focus');
-const darkmode = document.getElementById('darkmode');
+const darkmode = document.getElementById('toggledm');
 let dark = false;
 
 // Show Time
@@ -31,11 +31,20 @@ function setBgGreet() {
     let hour = today.getHours();
     if(hour >= 6 && hour < 12) {
         // Morning
-        document.body.style.backgroundImage = 'url("img/morning.jpg")';
+        if(dark === false) {
+            document.body.style.backgroundImage = 'url("img/morning.jpg")';
+        } else {
+            document.body.style.backgroundImage = 'url("img/dm-morning.jpg)';
+        }
         greeting.textContent = 'Good morning,';
     } else if(hour >= 12 && hour < 18) {
         // Afternoon
-        document.body.style.backgroundImage = 'url("img/midday.jpg")';
+        if(dark === false) {
+            document.body.style.backgroundImage = 'url("img/midday.jpg")';
+        } else {
+            document.body.style.backgroundImage = 'url("img/dm-midday.jpg)';
+        }
+        //document.body.style.backgroundImage = 'url("img/midday.jpg")';
         greeting.textContent = 'Good afternoon,';
     } else if(hour >= 18 && hour < 22) {
         // Evening
@@ -97,7 +106,18 @@ function setFocus(e) {
 
 // Toggle Darkmode
 function toggleDarkmode() {
-    console.log('bum');
+    if(dark === true) {
+        dark = false;
+        darkmode.style.color = 'goldenrod';
+        document.body.style.color = 'black';
+        document.body.style.backgroundColor = 'white';
+    } else {
+        dark = true;
+        darkmode.style.color = 'lightgray';
+        document.body.style.color = 'lightgray';
+        document.body.style.backgroundColor = 'black';
+        console.log(dark);
+    }
 }
 
 // Event Listeners
