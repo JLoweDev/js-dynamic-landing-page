@@ -3,6 +3,7 @@ const time = document.getElementById('time');
 const greeting = document.getElementById('greeting');
 const name = document.getElementById('name');
 const focus = document.getElementById('focus');
+const darkmode = document.getElementById('darkmode');
 
 // Show Time
 function showTime() {

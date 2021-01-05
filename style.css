@@ -22,7 +22,6 @@ body {
   justify-content: center;
   text-align: center;
   height: 100vh;
-  /*text-shadow: goldenrod 0px 0px 3px;*/
 }
 
 #linksbar {
@@ -89,6 +88,22 @@ h1 {
 h2 {
   font-size: 2.3rem;
   margin-bottom: 0.5rem;
+}
+
+#darkmode {
+  position: fixed;
+  margin-top: 1%;
+  margin-left: 96%;
+  width: 5%;
+}
+
+#toggledm {
+  border: none;
+  background: none;
+  color: goldenrod;
+  padding: 0;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
