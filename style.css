@@ -22,6 +22,7 @@ body {
   justify-content: center;
   text-align: center;
   height: 100vh;
+  background: rgba(250, 207, 113, 0.25);
 }
 
 #linksbar {
