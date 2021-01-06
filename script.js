@@ -32,7 +32,7 @@ function setBgGreet() {
     if(hour >= 6 && hour < 12) {
         // Morning
         if(dark === false) {
-            document.body.style.backgroundImage = 'url("img/morning.jpg")';
+            document.body.style.backgroundImage = 'url("img/dm-morning.jpg")';
         } else {
             document.body.style.backgroundImage = 'url("img/dm-morning.jpg)';
         }
@@ -40,7 +40,7 @@ function setBgGreet() {
     } else if(hour >= 12 && hour < 18) {
         // Afternoon
         if(dark === false) {
-            document.body.style.backgroundImage = 'url("img/midday.jpg")';
+            document.body.style.backgroundImage = 'url("img/dm-midday.jpg")';
         } else {
             document.body.style.backgroundImage = 'url("img/dm-midday.jpg)';
         }
@@ -48,12 +48,12 @@ function setBgGreet() {
         greeting.textContent = 'Good afternoon,';
     } else if(hour >= 18 && hour < 22) {
         // Evening
-        document.body.style.backgroundImage = 'url("img/evening.jpg")';
+        document.body.style.backgroundImage = 'url("img/dm-evening.jpg")';
         greeting.textContent = 'Good evening,';
         document.body.style.color = 'white';
     } else {
         // Night
-        document.body.style.backgroundImage = 'url("img/night.jpg")';
+        document.body.style.backgroundImage = 'url("img/dm-night.jpg")';
         greeting.textContent = 'Good night,';
         document.body.style.color = 'white';
     }
